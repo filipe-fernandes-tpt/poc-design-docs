@@ -77,10 +77,14 @@ collections:
                 name: do
                 widget: image
                 required: false
+                allow_multiple: false
+                choose_url: false
               - label: Don't
                 name: dont
                 widget: image
                 required: false
+                allow_multiple: false
+                choose_url: false
   - name: patterns
     label: Patterns
     folder: content/patterns/
@@ -123,10 +127,14 @@ collections:
                 name: do
                 widget: image
                 required: false
+                allow_multiple: false
+                choose_url: false
               - label: Don't
                 name: dont
                 widget: image
                 required: false
+                allow_multiple: false
+                choose_url: false
   - name: components
     label: Components
     folder: content/components/
@@ -169,10 +177,14 @@ collections:
                 name: do
                 widget: image
                 required: false
+                allow_multiple: false
+                choose_url: false
               - label: Don't
                 name: dont
                 widget: image
                 required: false
+                allow_multiple: false
+                choose_url: false
   - name: words
     label: Words
     folder: content/words/
@@ -215,10 +227,14 @@ collections:
                 name: do
                 widget: image
                 required: false
+                allow_multiple: false
+                choose_url: false
               - label: Don't
                 name: dont
                 widget: image
                 required: false
+                allow_multiple: false
+                choose_url: false
   - name: resources
     label: Resources
     folder: content/resources/
