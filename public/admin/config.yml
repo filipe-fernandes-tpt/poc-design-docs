@@ -3,30 +3,40 @@ backend:
   branch: main
 media_folder: public/img
 slug:
-  encoding: 'ascii'
+  encoding: ascii
   clean_accents: true
-  sanitize_replacement: '_'
+  sanitize_replacement: _
 collections:
-  - name: 'principles'
-    label: 'Principles'
+  - name: principles
+    label: Principles
     folder: content/principles/
     create: true
     editor:
       preview: false
-    files:
-      - label: 'Principles'
-        name: 'principles'
+    fields:
+      - label: Title
+        name: title
+        widget: string
+      - label: Publish Date
+        name: date
+        widget: datetime
+      - label: Body
+        name: body
+        widget: markdown
+      - label: Sections
+        name: sections
+        widget: list
         fields:
-          - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-          - { label: 'Body', name: 'body', widget: 'markdown' }
-          - label: 'Sections'
-            name: sections
-            widget: list
-            fields:
-              - { label: 'Title', name: 'title', widget: 'string' }
-              - { label: 'Body', name: 'body', widget: 'markdown' }
-          - { label: 'Last Updated', name: 'last_updated', widget: 'datetime', }
+          - label: Title
+            name: title
+            widget: string
+          - label: Body
+            name: body
+            widget: markdown
+      - label: Last Updated
+        name: last_updated
+        widget: datetime
+
   # - label: 'Blog'
   #   name: 'blog'
   #   folder: 'content/blogPosts'
