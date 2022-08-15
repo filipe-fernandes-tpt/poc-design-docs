@@ -17,12 +17,12 @@ collections:
       - label: Title
         name: title
         widget: string
+      - label: Headline
+        name: headline
+        widget: string
       - label: Publish Date
         name: date
         widget: datetime
-      - label: Body
-        name: body
-        widget: markdown
       - label: Sections
         name: sections
         widget: list
@@ -30,9 +30,11 @@ collections:
           - label: Title
             name: title
             widget: string
-          - label: Body
-            name: body
+            required: false
+          - label: Content
+            name: content
             widget: markdown
+            required: false
   - name: styles
     label: Styles
     folder: content/styles/
@@ -43,12 +45,13 @@ collections:
       - label: Title
         name: title
         widget: string
+      - label: Headline
+        name: headline
+        widget: string
+        required: false
       - label: Publish Date
         name: date
         widget: datetime
-      - label: Body
-        name: body
-        widget: markdown
       - label: Sections
         name: sections
         widget: list
@@ -56,9 +59,11 @@ collections:
           - label: Title
             name: title
             widget: string
-          - label: Body
-            name: body
+            required: false
+          - label: Content
+            name: content
             widget: markdown
+            required: false
           - label: Dos & Don'ts
             name: dosdonts
             widget: list
@@ -66,9 +71,102 @@ collections:
               - label: Description
                 name: description
                 widget: markdown
+                required: false
               - label: Do
                 name: do
                 widget: image
+                required: false
               - label: Don't
                 name: dont
                 widget: image
+                required: false
+  - name: patterns
+    label: Patterns
+    folder: content/patterns/
+    create: true
+    editor:
+      preview: false
+    fields:
+      - label: Title
+        name: title
+        widget: string
+      - label: Headline
+        name: headline
+        widget: string
+        required: false
+      - label: Publish Date
+        name: date
+        widget: datetime
+      - label: Sections
+        name: sections
+        widget: list
+        fields:
+          - label: Title
+            name: title
+            widget: string
+            required: false
+          - label: Content
+            name: content
+            widget: markdown
+            required: false
+          - label: Dos & Don'ts
+            name: dosdonts
+            widget: list
+            fields:
+              - label: Description
+                name: description
+                widget: markdown
+                required: false
+              - label: Do
+                name: do
+                widget: image
+                required: false
+              - label: Don't
+                name: dont
+                widget: image
+                required: false
+  - name: components
+    label: Components
+    folder: content/components/
+    create: true
+    editor:
+      preview: false
+    fields:
+      - label: Title
+        name: title
+        widget: string
+      - label: Headline
+        name: headline
+        widget: string
+        required: false
+      - label: Publish Date
+        name: date
+        widget: datetime
+      - label: Sections
+        name: sections
+        widget: list
+        fields:
+          - label: Title
+            name: title
+            widget: string
+            required: false
+          - label: Content
+            name: content
+            widget: markdown
+            required: false
+          - label: Dos & Don'ts
+            name: dosdonts
+            widget: list
+            fields:
+              - label: Description
+                name: description
+                widget: markdown
+                required: false
+              - label: Do
+                name: do
+                widget: image
+                required: false
+              - label: Don't
+                name: dont
+                widget: image
+                required: false
