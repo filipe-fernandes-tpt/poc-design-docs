@@ -7,13 +7,15 @@ slug:
   clean_accents: true
   sanitize_replacement: '_'
 collections:
-  - name: 'pages'
-    label: 'Pages'
+  - name: 'principles'
+    label: 'Principles'
+    folder: content/principles/
     create: true
+    editor:
+      preview: false
     files:
       - label: 'Principles'
         name: 'principles'
-        file: 'content/principles.yml'
         fields:
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Publish Date', name: 'date', widget: 'datetime' }
