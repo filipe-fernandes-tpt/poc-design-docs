@@ -79,12 +79,14 @@ collections:
                 required: false
                 allow_multiple: false
                 choose_url: false
+                media_folder: /public/img/styles
               - label: Don't
                 name: dont
                 widget: image
                 required: false
                 allow_multiple: false
                 choose_url: false
+                media_folder: /public/img/styles
   - name: patterns
     label: Patterns
     folder: content/patterns/
@@ -129,12 +131,14 @@ collections:
                 required: false
                 allow_multiple: false
                 choose_url: false
+                media_folder: /public/img/patterns
               - label: Don't
                 name: dont
                 widget: image
                 required: false
                 allow_multiple: false
                 choose_url: false
+                media_folder: /public/img/patterns
   - name: components
     label: Components
     folder: content/components/
@@ -179,12 +183,14 @@ collections:
                 required: false
                 allow_multiple: false
                 choose_url: false
+                media_folder: /public/img/components
               - label: Don't
                 name: dont
                 widget: image
                 required: false
                 allow_multiple: false
                 choose_url: false
+                media_folder: /public/img/components
   - name: words
     label: Words
     folder: content/words/
@@ -229,12 +235,14 @@ collections:
                 required: false
                 allow_multiple: false
                 choose_url: false
+                media_folder: /public/img/words
               - label: Don't
                 name: dont
                 widget: image
                 required: false
                 allow_multiple: false
                 choose_url: false
+                media_folder: /public/img/words
   - name: resources
     label: Resources
     folder: content/resources/
