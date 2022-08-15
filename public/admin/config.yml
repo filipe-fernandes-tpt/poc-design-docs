@@ -9,6 +9,7 @@ slug:
 collections:
   - name: 'pages'
     label: 'Pages'
+    create: true
     files:
       - label: 'Principles'
         name: 'principles'
