@@ -13,7 +13,7 @@ const importBlogPosts = async () => {
     .map(relativePath => relativePath.substring(2));
   return Promise.all(
     markdownFiles.map(async path => {
-      const markdown = await import(`../../content/blogPosts/${path}`);
+      const markdown = await import(`${BLOG_POSTS_PATH}/${path}`);
       return { ...markdown, slug: path.substring(0, path.length - 3) };
     })
   );
