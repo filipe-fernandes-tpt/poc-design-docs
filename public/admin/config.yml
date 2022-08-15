@@ -14,6 +14,10 @@ collections:
     editor:
       preview: false
     fields:
+      - label: Collection Name
+        name: collection_name
+        widget: hidden
+        default: principles
       - label: Title
         name: title
         widget: string
@@ -42,6 +46,10 @@ collections:
     editor:
       preview: false
     fields:
+      - label: Collection Name
+        name: collection_name
+        widget: hidden
+        default: styles
       - label: Title
         name: title
         widget: string
@@ -94,6 +102,10 @@ collections:
     editor:
       preview: false
     fields:
+      - label: Collection Name
+        name: collection_name
+        widget: hidden
+        default: patterns
       - label: Title
         name: title
         widget: string
@@ -146,6 +158,10 @@ collections:
     editor:
       preview: false
     fields:
+      - label: Collection Name
+        name: collection_name
+        widget: hidden
+        default: components
       - label: Title
         name: title
         widget: string
@@ -198,6 +214,10 @@ collections:
     editor:
       preview: false
     fields:
+      - label: Collection Name
+        name: collection_name
+        widget: hidden
+        default: words
       - label: Title
         name: title
         widget: string
@@ -250,6 +270,10 @@ collections:
     editor:
       preview: false
     fields:
+      - label: Collection Name
+        name: collection_name
+        widget: hidden
+        default: resources
       - label: Title
         name: title
         widget: string
@@ -279,6 +303,10 @@ collections:
     editor:
       preview: false
     fields:
+      - label: Collection Name
+        name: collection_name
+        widget: hidden
+        default: about atlas
       - label: Title
         name: title
         widget: string
