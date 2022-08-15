@@ -33,17 +33,39 @@ collections:
           - label: Body
             name: body
             widget: markdown
-      - label: Last Updated
-        name: last_updated
+  - name: styles
+    label: Styles
+    folder: content/styles/
+    create: true
+    editor:
+      preview: false
+    fields:
+      - label: Title
+        name: title
+        widget: string
+      - label: Publish Date
+        name: date
         widget: datetime
-
-  # - label: 'Blog'
-  #   name: 'blog'
-  #   folder: 'content/blogPosts'
-  #   create: true
-  #   slug: '{{year}}-{{month}}-{{day}}_{{slug}}'
-  #   fields:
-  #     - { label: 'Title', name: 'title', widget: 'string', required: true }
-  #     - { label: 'Publish Date', name: 'date', widget: 'datetime', required: true }
-  #     - { label: 'Featured Image', name: 'thumbnail', widget: 'image', required: true }
-  #     - { label: 'Body', name: 'body', widget: 'markdown', required: true }
+      - label: Body
+        name: body
+        widget: markdown
+      - label: Sections
+        name: sections
+        widget: list
+        fields:
+          - label: Title
+            name: title
+            widget: string
+          - label: Body
+            name: body
+            widget: markdown
+          - label: Dos & Don'ts
+            name: dosdonts
+            widget: list
+            fields:
+              - label: Do
+                name: do
+                widget: image
+              - label: Don't
+                name: dont
+                widget: image
