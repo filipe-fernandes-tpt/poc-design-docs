@@ -63,6 +63,9 @@ collections:
             name: dosdonts
             widget: list
             fields:
+              - label: Description
+                name: description
+                widget: markdown
               - label: Do
                 name: do
                 widget: image
