@@ -67,6 +67,7 @@ collections:
           - label: Dos & Don'ts
             name: dosdonts
             widget: list
+            required: false
             fields:
               - label: Description
                 name: description
@@ -112,6 +113,7 @@ collections:
           - label: Dos & Don'ts
             name: dosdonts
             widget: list
+            required: false
             fields:
               - label: Description
                 name: description
@@ -157,6 +159,7 @@ collections:
           - label: Dos & Don'ts
             name: dosdonts
             widget: list
+            required: false
             fields:
               - label: Description
                 name: description
@@ -170,3 +173,49 @@ collections:
                 name: dont
                 widget: image
                 required: false
+    - name: words
+      label: Words
+      folder: content/words/
+      create: true
+      editor:
+        preview: false
+      fields:
+        - label: Title
+          name: title
+          widget: string
+        - label: Headline
+          name: headline
+          widget: string
+          required: false
+        - label: Publish Date
+          name: date
+          widget: datetime
+        - label: Sections
+          name: sections
+          widget: list
+          fields:
+            - label: Title
+              name: title
+              widget: string
+              required: false
+            - label: Content
+              name: content
+              widget: markdown
+              required: false
+            - label: Dos & Don'ts
+              name: dosdonts
+              widget: list
+              required: false
+              fields:
+                - label: Description
+                  name: description
+                  widget: markdown
+                  required: false
+                - label: Do
+                  name: do
+                  widget: image
+                  required: false
+                - label: Don't
+                  name: dont
+                  widget: image
+                  required: false
