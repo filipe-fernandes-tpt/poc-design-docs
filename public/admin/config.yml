@@ -12,7 +12,7 @@ collections:
     folder: content/principles/
     create: true
     editor:
-      preview: false
+      preview: true
     fields:
       - label: Collection Name
         name: collection_name
@@ -44,7 +44,7 @@ collections:
     folder: content/styles/
     create: true
     editor:
-      preview: false
+      preview: true
     fields:
       - label: Collection Name
         name: collection_name
@@ -100,7 +100,7 @@ collections:
     folder: content/patterns/
     create: true
     editor:
-      preview: false
+      preview: true
     fields:
       - label: Collection Name
         name: collection_name
@@ -156,7 +156,7 @@ collections:
     folder: content/components/
     create: true
     editor:
-      preview: false
+      preview: true
     fields:
       - label: Collection Name
         name: collection_name
@@ -212,7 +212,7 @@ collections:
     folder: content/words/
     create: true
     editor:
-      preview: false
+      preview: true
     fields:
       - label: Collection Name
         name: collection_name
@@ -268,7 +268,7 @@ collections:
     folder: content/resources/
     create: true
     editor:
-      preview: false
+      preview: true
     fields:
       - label: Collection Name
         name: collection_name
@@ -301,7 +301,7 @@ collections:
     folder: content/about-atlas/
     create: true
     editor:
-      preview: false
+      preview: true
     fields:
       - label: Collection Name
         name: collection_name
